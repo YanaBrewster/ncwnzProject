@@ -5,7 +5,7 @@
     border-bottom: solid 3px $brandColor;
     padding-top: 1%;
     padding-left: 1%;
-    height: 10%; 
+    height: 12%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -13,11 +13,11 @@
 
     @media screen and (min-width: $mdWidth){
       padding-top:1%;
-      height: 12%; 
+      height: 12%;
     }
     @media screen and (min-width: $lgWidth){
       padding-top:1%;
-      height: 10%; 
+      height: 15%;
     }
 }
 
@@ -26,28 +26,27 @@
 #logo-l{
     float: left;
     @media screen and (min-width: $mdWidth){
-        padding-left: 5%;
+        padding-left: 2%;
     }
     @media screen and (min-width: $lgWidth){
         padding-left: 13%;
-        width: 30%;
     }
      img{
         float: left;
         margin-left: 1%;
         margin-top: 1%;
-        width: 60%;
+        width: 70%;
 
         @media screen and (min-width: $mdWidth){
         width: 70%;
-        margin-left: 0;
+        margin-left: 0px;
         margin-top: 1%;
         }
 
         @media screen and (min-width: $lgWidth){
-        width: 70%;
-        margin-left: 0;
-        margin-top: 0;
+        width: 65%;
+        margin-left: 0px;
+        margin-top: 0px;
         }
 }
 }
@@ -70,27 +69,29 @@
     }
      @media screen and (min-width: $mdWidth){
         font-size: 100%;
-        width: 50%;
+        width: 60%;
 
         li{
-  
+
     }
 
         #navActive, li:active, {
-        border-bottom: 3px solid $brandColor; 
+        border-bottom: 3px solid $brandColor;
         }
     }
     @media screen and (min-width: $lgWidth){
         margin-right: 6%;
+        display:inline-block !important;
         font-size: 120%;
         margin: 0 8px;
         width: 40%;
 
         #navActive, li:hover, {
-        border-bottom: 3px solid $brandColor; 
+        border-bottom: 3px solid $brandColor;
         }
     }
 }
+
 
 
 #menuIcon-l{
@@ -129,7 +130,16 @@
     }
 }
 
-// FOOTER 
+// TABLET NAV FIX
+
+@media screen and (max-width: 880px) {
+  #logo-l {
+    padding: 0;
+    width: 200px;
+  }
+}
+
+// FOOTER
 
 #footer-l{
     width: 100%;
@@ -145,7 +155,7 @@
     width: 100%;
     padding-bottom: 20px;
 }
-   
+
 .footerContact-l{
     h4{
         color: white !important;
@@ -187,7 +197,7 @@
       }
     @media screen and (min-width: $lgWidth){
         a:hover, {
-       color: $brandColor; 
+       color: $brandColor;
         }
       }
     }
@@ -230,7 +240,7 @@
 @media screen and (min-width: $mdWidth){
     @for $i from 1 through $columns{
         .colM#{$i}-l{
-            width: $columnWidth * $i; 
+            width: $columnWidth * $i;
         }
         .offsetM#{$i}-l{
             margin-left:$columnWidth * $i;
@@ -246,15 +256,15 @@
         .offsetL#{$i}-l{
             margin-left:$columnWidth * $i;
         }
-    } 
+    }
 }
 
 // CONTAINERS
 
 #main-l{
-    padding-top: 10%;
-    padding-right: 0%;
-    padding-left: 0%;
+    padding-top: 18%;
+    padding-right: 0px;
+    padding-left: 0px;
     width: 100%;
     margin: 0 auto;
     background-color: white;
@@ -265,7 +275,7 @@
     width: 80%;
     padding-top: 5%;
     }
-} 
+}
 
 
 // POSITIONING
@@ -300,7 +310,7 @@
     display:block;
     margin:0 auto;
  @media screen and (min-width: $mdWidth){
-  text-align: right; 
+  text-align: right;
     }
   @media screen and (min-width: $lgWidth){
     text-align: left;
@@ -312,10 +322,10 @@
   a {
     float: none;
     @media screen and (min-width: $mdWidth){
-  float: none;
+    float: none;
     }
     @media screen and (min-width: $lgWidth){
-  float: right;
+    float: right;
     }
   }
 }
@@ -336,19 +346,23 @@
 .sidenav {
   margin: 0 auto;
   position: static;
-  width: 40%; 
+  width: 40%;
   background: white;
   border-radius: 5px;
   border: solid 3px $brandColor;
-  overflow-x: hidden;
+  // overflow-x: hidden;
   margin-top: 8%;
   border-bottom: solid 3px $brandColor;
   padding: 6px 0;
     @media screen and (min-width: $lgWidth){
-    position: fixed;
+    display: inline-block;
+    float: left;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
     width: 15%;
-    top: 7%;
-    left: 14%;
+    margin-left: 5%;
+    margin-top: 5%;
     }
 }
 
@@ -365,7 +379,7 @@
 
 
 .main-sidenav {
-  margin-left: 5%; /* Same width as the sidebar + left position in px */ 
+  margin-left: 5%; /* Same width as the sidebar + left position in px */
   width: 90%;
   padding: 4%;
   margin-right: 3%;
@@ -374,7 +388,7 @@
   border: solid 3px rgba(153, 51, 153, 0.63);
 
   p{
-    color: $textColor; 
+    color: $textColor;
     font-family: $text;
     font-size: 1.25em;
   }
@@ -383,7 +397,7 @@
   }
 
     @media screen and (min-width: $lgWidth){
-      margin-left: 25%; /* Same width as the sidebar + left position in px */ 
+      margin-left: 25%; /* Same width as the sidebar + left position in px */
       width: 68%;
       padding: 4%;
       margin-right: 3%;
@@ -393,27 +407,10 @@
 
 
 
-
-// TABLET NAV FIX
-
-@media screen and (max-width: 880px) {
-  #logo-l {
-    padding: 0;
-    width: 250px;
-  }
-}
-
 // HIDE
 
-
+@media all and (max-width: $mdWidth) {
 .hide{
-
   display: none;
 }
-@media screen and (min-width: $mdWidth){
-  display: block;
-} 
-
-@media screen and (min-width: $lgWidth){
-  display: block;
 }

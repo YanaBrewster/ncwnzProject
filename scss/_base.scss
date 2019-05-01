@@ -23,6 +23,8 @@ h1 {
 h2{
   @include headings;
   font-size: 1.75em;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 h3{
@@ -30,12 +32,15 @@ h3{
   font-size: 1.75em;
   text-align: center;
   margin: 0 auto;
-
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 h4{
   @include headings;
   font-size: 1.25em;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 p{
@@ -45,13 +50,9 @@ p{
 
 }
 
-// img{
-//   padding: 0 !important;
-//   margin: 0 !important;
-// }
 
 ul{
-    margin-left:1%;
+    margin-left:3%;
     margin-right: 0px !important;
 }
 
@@ -69,6 +70,8 @@ hr{
 	border-bottom: solid $brandColor 2px;
 	width: 70%;
 	margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 a{

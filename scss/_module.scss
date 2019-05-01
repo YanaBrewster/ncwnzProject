@@ -17,7 +17,7 @@
     border:none;
     display:block;
     margin:0 auto;
-    
+
 }
 .btn-hide{
     margin:auto;
@@ -36,7 +36,7 @@
   border-radius: 50px;
   width:120px;
   text-align: center;
-  margin: 0 auto;  
+  margin: 0 auto;
     @media screen and (min-width: $mdWidth){
       width: 120px;
     }
@@ -57,7 +57,7 @@
 
 
 .btn-magenta{
- background-color: $brandColor; 
+ background-color: $brandColor;
 }
 
 
@@ -90,7 +90,7 @@
   background-color: $brandColor;
   box-shadow: 0 6px #666797;
   margin-bottom: 15px;
-  margin-left: 5px; 
+  margin-left: 5px;
   color: white;
 }
 
@@ -111,8 +111,8 @@
   font-size: 1em;
   border: none;
   border-radius: 50px;
-  width: 150px;  
-}      
+  width: 150px;
+}
 
 .footerTop-l .login-container button {
   font-family: 'PT Sans', sans-serif;
@@ -149,14 +149,14 @@
   .footerTop-l a, .footerTop-l  input[type=text], .footerTop-l .login-container {
     float: right;
     display: block;
-    text-align: left; 
-    width: 80%;     
+    text-align: left;
+    width: 80%;
     padding: 14px;
   }
   .footerTop-l input[type=text] {
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
   }
-} 
+}
 
 // BANNER
 
@@ -175,7 +175,6 @@
 
 .banner-welcomehome{
   background-image: url("../images/topmotif.png");
-  height: 253px;
 }
 
 .banner-donate{
@@ -186,7 +185,7 @@
 .banner-gray{
   background-color: #666666;
   margin-top: 5%;
-  padding-top: 5%; 
+  padding-top: 5%;
   p{
     color: white !important;
   }
@@ -244,8 +243,3 @@
   text-align: center;
 
 }
-
-
-
-
-
