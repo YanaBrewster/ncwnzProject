@@ -1,0 +1,419 @@
+// NAV
+
+#nav-l{
+    background-color: white;
+    border-bottom: solid 3px $brandColor;
+    padding-top: 1%;
+    padding-left: 1%;
+    height: 10%; 
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    @media screen and (min-width: $mdWidth){
+      padding-top:1%;
+      height: 12%; 
+    }
+    @media screen and (min-width: $lgWidth){
+      padding-top:1%;
+      height: 10%; 
+    }
+}
+
+
+
+#logo-l{
+    float: left;
+    @media screen and (min-width: $mdWidth){
+        padding-left: 5%;
+    }
+    @media screen and (min-width: $lgWidth){
+        padding-left: 13%;
+        width: 30%;
+    }
+     img{
+        float: left;
+        margin-left: 1%;
+        margin-top: 1%;
+        width: 60%;
+
+        @media screen and (min-width: $mdWidth){
+        width: 70%;
+        margin-left: 0;
+        margin-top: 1%;
+        }
+
+        @media screen and (min-width: $lgWidth){
+        width: 70%;
+        margin-left: 0;
+        margin-top: 0;
+        }
+}
+}
+
+#navList-l{
+    float: right;
+    width: 50%;
+    padding-top: 1%;
+    ul{
+        list-style: none;
+        }
+    li{
+        display: inline-block;
+        float: left;
+        margin: 0 8px;
+        font-family: $text;
+    }
+     a{
+        color: $textColor;
+    }
+     @media screen and (min-width: $mdWidth){
+        font-size: 100%;
+        width: 50%;
+
+        li{
+  
+    }
+
+        #navActive, li:active, {
+        border-bottom: 3px solid $brandColor; 
+        }
+    }
+    @media screen and (min-width: $lgWidth){
+        margin-right: 6%;
+        font-size: 120%;
+        margin: 0 8px;
+        width: 40%;
+
+        #navActive, li:hover, {
+        border-bottom: 3px solid $brandColor; 
+        }
+    }
+}
+
+
+#menuIcon-l{
+    display: none;
+}
+
+
+@media screen and (max-width: $mdWidth){
+
+    #menuIcon-l{
+        display: block;
+        float: right;
+        color: $brandColor;
+        margin-right: 3%;
+        font-size: 2.5em;
+    }
+
+    #navList-l{
+        display: none;
+        float: right;
+        clear: both;
+        background-color: white;
+        width: 65%;
+        padding-top: 3%;
+        padding: 10% 10% 10% 10%;
+        border: 3px solid $brandColor;
+        font-size: 90%;
+    }
+
+    #navList-l ul li{
+        display: block;
+        float: none;
+        padding-top: 20px;
+        font-size: 1.875em;
+
+    }
+}
+
+// FOOTER 
+
+#footer-l{
+    width: 100%;
+    z-index: +1;
+    h4{
+    color: $footerTop;
+    text-shadow: none !important;
+    }
+}
+
+.footerTop-l{
+    background-color: $footerTop;
+    width: 100%;
+    padding-bottom: 20px;
+}
+   
+.footerContact-l{
+    h4{
+        color: white !important;
+        text-shadow: none !important;
+    }
+    p{
+        color: white;
+        text-shadow: none;
+    }
+    @media screen and (max-width: $mdWidth){
+        display: none;
+    }
+
+}
+
+.footerSocialmedia-l{
+    img{
+        height: 25px;
+    }
+     @media screen and (max-width: $mdWidth){
+        display: flex;
+        float: left;
+    }
+}
+
+.footer-buttons-l{
+      @media screen and (max-width: $mdWidth){
+       display: none;
+    }
+}
+
+.footerList-l{
+
+    li{
+    list-style: none;
+    color: black;
+    a{
+    color: $textColor;
+      }
+    @media screen and (min-width: $lgWidth){
+        a:hover, {
+       color: $brandColor; 
+        }
+      }
+    }
+}
+
+.footerBottom-l{
+    background-color: $footerBottom;
+    background-image: url("../images/footermotif.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+}
+
+
+// GRID
+
+.row-l {
+    &::after{
+        clear: both;
+        display: block;
+        content: '';
+    }
+}
+
+.col-l {
+    float: left;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+@for $i from 1 through $columns{
+    .col#{$i}-l{
+        width: $columnWidth * $i;
+    }
+    .offset#{$i}-l{
+            margin-left:$columnWidth * $i;
+    }
+}
+
+@media screen and (min-width: $mdWidth){
+    @for $i from 1 through $columns{
+        .colM#{$i}-l{
+            width: $columnWidth * $i; 
+        }
+        .offsetM#{$i}-l{
+            margin-left:$columnWidth * $i;
+        }
+    }
+}
+
+@media screen and (min-width: $lgWidth){
+    @for $i from 1 through $columns{
+        .colL#{$i}-l{
+            width: $columnWidth * $i;
+        }
+        .offsetL#{$i}-l{
+            margin-left:$columnWidth * $i;
+        }
+    } 
+}
+
+// CONTAINERS
+
+#main-l{
+    padding-top: 10%;
+    padding-right: 0%;
+    padding-left: 0%;
+    width: 100%;
+    margin: 0 auto;
+    background-color: white;
+    @media screen and (min-width: $mdWidth){
+     width: 75%;
+    }
+    @media screen and (min-width: $lgWidth){
+    width: 80%;
+    padding-top: 5%;
+    }
+} 
+
+
+// POSITIONING
+
+.center-l{
+    text-align: center;
+    display:block;
+    margin:0 auto;
+}
+
+.btn-center-home-l{
+    text-align: center;
+    display:block;
+    margin:0 auto;
+    @media screen and (min-width: $mdWidth){
+    text-align: left;
+    }
+    @media screen and (min-width: $lgWidth){
+    text-align: left;
+
+    }
+}
+
+.btn-center-l{
+    text-align: center;
+    display:block;
+    margin:0 auto;
+}
+
+.center-on-off-l{
+    text-align: center;
+    display:block;
+    margin:0 auto;
+ @media screen and (min-width: $mdWidth){
+  text-align: right; 
+    }
+  @media screen and (min-width: $lgWidth){
+    text-align: left;
+    margin:0;
+    }
+}
+
+.right-l{
+  a {
+    float: none;
+    @media screen and (min-width: $mdWidth){
+  float: none;
+    }
+    @media screen and (min-width: $lgWidth){
+  float: right;
+    }
+  }
+}
+
+.left-l{
+  float: left;
+}
+
+
+
+
+
+
+
+
+// SIDENAV
+
+.sidenav {
+  margin: 0 auto;
+  position: static;
+  width: 40%; 
+  background: white;
+  border-radius: 5px;
+  border: solid 3px $brandColor;
+  overflow-x: hidden;
+  margin-top: 8%;
+  border-bottom: solid 3px $brandColor;
+  padding: 6px 0;
+    @media screen and (min-width: $lgWidth){
+    position: fixed;
+    width: 15%;
+    top: 7%;
+    left: 14%;
+    }
+}
+
+.sidenav a {
+  padding: 15px 15px 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.25em;
+  color: $textColor;
+  font-family: $text;
+  border-bottom: solid 3px rgba(153, 51, 153, 0.63);
+  display: block;
+}
+
+
+.main-sidenav {
+  margin-left: 5%; /* Same width as the sidebar + left position in px */ 
+  width: 90%;
+  padding: 4%;
+  margin-right: 3%;
+  margin-top: 5%;
+  border-radius: 10px;
+  border: solid 3px rgba(153, 51, 153, 0.63);
+
+  p{
+    color: $textColor; 
+    font-family: $text;
+    font-size: 1.25em;
+  }
+  h3{
+    text-align: left;
+  }
+
+    @media screen and (min-width: $lgWidth){
+      margin-left: 25%; /* Same width as the sidebar + left position in px */ 
+      width: 68%;
+      padding: 4%;
+      margin-right: 3%;
+      margin-top: 4%;
+    }
+}
+
+
+
+
+// TABLET NAV FIX
+
+@media screen and (max-width: 880px) {
+  #logo-l {
+    padding: 0;
+    width: 250px;
+  }
+}
+
+// HIDE
+
+
+.hide{
+
+  display: none;
+}
+@media screen and (min-width: $mdWidth){
+  display: block;
+} 
+
+@media screen and (min-width: $lgWidth){
+  display: block;
+}
