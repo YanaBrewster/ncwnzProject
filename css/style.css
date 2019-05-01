@@ -183,7 +183,9 @@ a:hover {
   z-index: +1; }
   #footer-l h4 {
     color: #356666;
-    text-shadow: none !important; }
+    text-shadow: none !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important; }
 
 .footerTop-l {
   background-color: #356666;
@@ -201,11 +203,12 @@ a:hover {
     display: none; } }
 
 .footerSocialmedia-l img {
-  height: 25px; }
+  height: 35px; }
 @media screen and (max-width: 600px) {
   .footerSocialmedia-l {
     display: flex;
-    float: left; } }
+    float: left;
+    height: 30px; } }
 
 @media screen and (max-width: 600px) {
   .footer-buttons-l {
@@ -457,6 +460,7 @@ a:hover {
   padding-top: 18%;
   padding-right: 0px;
   padding-left: 0px;
+  padding-bottom: 3%;
   width: 100%;
   margin: 0 auto;
   background-color: white; }
