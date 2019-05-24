@@ -25,6 +25,7 @@
 
 #logo-l{
     float: left;
+    width: 40%;
     @media screen and (min-width: $mdWidth){
         padding-left: 2%;
     }
@@ -353,10 +354,10 @@
   width: 40%;
   background: white;
   border-radius: 5px;
-  border: solid 3px $brandColor;
+  // border: solid 3px $brandColor;
   // overflow-x: hidden;
   margin-top: 8%;
-  border-bottom: solid 3px $brandColor;
+  // border-bottom: solid 3px $brandColor;
   padding: 6px 0;
     @media screen and (min-width: $lgWidth){
     display: inline-block;
@@ -377,10 +378,20 @@
   font-size: 1.25em;
   color: $textColor;
   font-family: $text;
-  border-bottom: solid 3px rgba(153, 51, 153, 0.63);
+  // border-bottom: solid 3px rgba(153, 51, 153, 0.63);
   display: block;
 }
 
+.sidenav-test{
+  border-top: 3px solid #993399;
+  border-left: 3px solid #993399;
+  border-right: 3px solid #993399;
+  border-bottom: 0px;
+}
+
+ .sidenav-bottom{
+  border-bottom: 3px solid #993399;
+ }
 
 .main-sidenav {
   margin-left: 5%; /* Same width as the sidebar + left position in px */
