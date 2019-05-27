@@ -343,9 +343,6 @@
 
 
 
-
-
-
 // SIDENAV
 
 .sidenav {
@@ -353,11 +350,8 @@
   position: static;
   width: 40%;
   background: white;
-  border-radius: 5px;
-  // border: solid 3px $brandColor;
   // overflow-x: hidden;
   margin-top: 8%;
-  // border-bottom: solid 3px $brandColor;
   padding: 6px 0;
     @media screen and (min-width: $lgWidth){
     display: inline-block;
@@ -378,23 +372,27 @@
   font-size: 1.25em;
   color: $textColor;
   font-family: $text;
-  // border-bottom: solid 3px rgba(153, 51, 153, 0.63);
   display: block;
 }
 
-.sidenav-test{
-  border-top: 3px solid #993399;
-  border-left: 3px solid #993399;
-  border-right: 3px solid #993399;
+.sidenav-inner{
+  border-top: 3px solid $brandColor;
+  border-left: 3px solid $brandColor;
+  border-right: 3px solid $brandColor;
   border-bottom: 0px;
 }
 
  .sidenav-bottom{
-  border-bottom: 3px solid #993399;
+  border-bottom: 3px solid $brandColor;
+  border-radius: 0px 0px 5px 5px;
+ }
+
+ .sidenav-top{
+  border-radius: 5px 5px 0px 0px;
  }
 
 .main-sidenav {
-  margin-left: 5%; /* Same width as the sidebar + left position in px */
+  margin-left: 5%;
   width: 90%;
   padding: 4%;
   margin-right: 3%;
@@ -412,7 +410,7 @@
   }
 
     @media screen and (min-width: $lgWidth){
-      margin-left: 25%; /* Same width as the sidebar + left position in px */
+      margin-left: 25%;
       width: 68%;
       padding: 4%;
       margin-right: 3%;

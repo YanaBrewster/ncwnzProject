@@ -523,7 +523,6 @@ a:hover {
   position: static;
   width: 40%;
   background: white;
-  border-radius: 5px;
   margin-top: 8%;
   padding: 6px 0; }
   @media screen and (min-width: 960px) {
@@ -546,18 +545,21 @@ a:hover {
   font-family: "PT Sans", sans-serif;
   display: block; }
 
-.sidenav-test {
+.sidenav-inner {
   border-top: 3px solid #993399;
   border-left: 3px solid #993399;
   border-right: 3px solid #993399;
   border-bottom: 0px; }
 
 .sidenav-bottom {
-  border-bottom: 3px solid #993399; }
+  border-bottom: 3px solid #993399;
+  border-radius: 0px 0px 5px 5px; }
+
+.sidenav-top {
+  border-radius: 5px 5px 0px 0px; }
 
 .main-sidenav {
   margin-left: 5%;
-  /* Same width as the sidebar + left position in px */
   width: 90%;
   padding: 4%;
   margin-right: 3%;
@@ -573,7 +575,6 @@ a:hover {
   @media screen and (min-width: 960px) {
     .main-sidenav {
       margin-left: 25%;
-      /* Same width as the sidebar + left position in px */
       width: 68%;
       padding: 4%;
       margin-right: 3%;
