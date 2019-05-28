@@ -24,7 +24,7 @@ h2{
   @include headings;
   font-size: 1.75em;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 h3{
@@ -33,14 +33,14 @@ h3{
   text-align: center;
   margin: 0 auto;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 h4{
   @include headings;
   font-size: 1.25em;
   margin-top: 5%;
-  margin-bottom: 5%;
+  margin-bottom: 4%;
 }
 
 p{

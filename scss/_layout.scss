@@ -5,7 +5,7 @@
     border-bottom: solid 3px $brandColor;
     padding-top: 1%;
     padding-left: 1%;
-    height: 12%;
+    height: 10%;
     position: fixed;
     top: 0;
     width: 100%;
@@ -13,39 +13,40 @@
 
     @media screen and (min-width: $mdWidth){
       padding-top:1%;
-      height: 12%;
+      height: 10%;
     }
     @media screen and (min-width: $lgWidth){
-      padding-top:1%;
-      height: 15%;
+      padding-top:0.5%;
+      height: 12%;
     }
 }
 
 
-
 #logo-l{
     float: left;
-    width: 40%;
+    width: 50%;
     @media screen and (min-width: $mdWidth){
         padding-left: 2%;
+        width: 30%;
     }
     @media screen and (min-width: $lgWidth){
         padding-left: 13%;
+        width: 35%;
     }
      img{
         float: left;
         margin-left: 1%;
         margin-top: 1%;
-        width: 70%;
+        width: 60%;
 
         @media screen and (min-width: $mdWidth){
-        width: 70%;
+        width: 60%;
         margin-left: 0px;
         margin-top: 1%;
         }
 
         @media screen and (min-width: $lgWidth){
-        width: 65%;
+        width: 60%;
         margin-left: 0px;
         margin-top: 0px;
         }
@@ -129,15 +130,6 @@
         font-size: 1.875em;
 
     }
-}
-
-// TABLET NAV FIX
-
-@media screen and (max-width: 880px) {
-  #logo-l {
-    padding: 0;
-    width: 200px;
-  }
 }
 
 // FOOTER
@@ -266,10 +258,9 @@
 // CONTAINERS
 
 #main-l{
-    padding-top: 18%;
+    padding-top: 10%;
     padding-right: 0px;
     padding-left: 0px;
-    padding-bottom: 3%;
     width: 100%;
     margin: 0 auto;
     background-color: white;
@@ -351,9 +342,10 @@
   width: 40%;
   background: white;
   // overflow-x: hidden;
-  margin-top: 8%;
+  margin-top: 2%;
   padding: 6px 0;
     @media screen and (min-width: $lgWidth){
+    padding-top: 5%;
     display: inline-block;
     float: left;
     position: -webkit-sticky;
@@ -361,7 +353,7 @@
     top: 0;
     width: 15%;
     margin-left: 5%;
-    margin-top: 5%;
+    margin-top: 6%;
     }
 }
 
@@ -392,9 +384,10 @@
  }
 
 .main-sidenav {
-  margin-left: 5%;
   width: 90%;
-  padding: 4%;
+  padding-top: 3%;
+  padding: 3%;
+  margin-left: 5%;
   margin-right: 3%;
   margin-top: 5%;
   border-radius: 10px;
@@ -412,7 +405,7 @@
     @media screen and (min-width: $lgWidth){
       margin-left: 25%;
       width: 68%;
-      padding: 4%;
+      padding: 3%;
       margin-right: 3%;
       margin-top: 4%;
     }
