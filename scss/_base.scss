@@ -26,6 +26,7 @@ h2{
   font-size: 1.75em;
   margin-top: 5%;
   margin-bottom: 3%;
+  padding-left: 2%;
 }
 
 h3{
@@ -35,6 +36,7 @@ h3{
   margin: 0 auto;
   margin-top: 5%;
   margin-bottom: 3%;
+
 }
 
 h4{
@@ -42,12 +44,14 @@ h4{
   font-size: 1.25em;
   margin-top: 5%;
   margin-bottom: 4%;
+  padding-left: 2%;
 }
 
 p{
   color: $textColor;
   font-family: $text;
-  font-size: 1.25em;
+  font-size:1.125em;
+  padding-left: 2%;
 
 }
 
@@ -81,4 +85,12 @@ a{
 
 a:hover{
   color: #663399;
+}
+
+select{
+  	width: 80%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: solid $brandColor 2px;
+    font-family: $text;
 }
