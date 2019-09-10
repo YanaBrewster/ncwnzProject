@@ -24,7 +24,7 @@ h1 {
 h2{
   @include headings;
   font-size: 1.75em;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-bottom: 3%;
   padding-left: 2%;
 }
@@ -34,7 +34,7 @@ h3{
   font-size: 1.75em;
   text-align: center;
   margin: 0 auto;
-  margin-top: 5%;
+  margin-top: 2%;
   margin-bottom: 3%;
 
 }
@@ -42,8 +42,8 @@ h3{
 h4{
   @include headings;
   font-size: 1.25em;
-  margin-top: 5%;
-  margin-bottom: 4%;
+  margin-top: 2%;
+  margin-bottom: 3%;
   padding-left: 2%;
 }
 
@@ -93,4 +93,6 @@ select{
     margin-bottom: 10px;
     border: solid $brandColor 2px;
     font-family: $text;
+    font-size: 1.25em;
+    background-color: white;
 }
